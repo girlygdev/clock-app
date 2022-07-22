@@ -125,6 +125,7 @@ const App = () => {
   }
 
   const clearUserData = () => {
+    setRequestNewData(true)
     localStorage.removeItem('clockAppUserData-status')
     localStorage.removeItem('clockAppUserData-date')
     localStorage.removeItem('clockAppUserData-quote')
@@ -148,10 +149,10 @@ const App = () => {
               more <i className="fas fa-arrow-up icon-arrow"></i>
             </button>
             <button className="actions__btn" onClick={clearUserData}>
-              clear user data <i className="fas fa-times icon-arrow"></i>
+              refresh <i className="fas fa-sync-alt icon-arrow"></i>
             </button>
           </div>
-
+          
           <Details weatherData={weatherData}/>
         </section>
       </div>
