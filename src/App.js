@@ -148,7 +148,7 @@ const App = () => {
             <button className="actions__btn" onClick={() => setShowDetails(!showDetails)}>
               more <i className="fas fa-arrow-up icon-arrow"></i>
             </button>
-            <button className="actions__btn" onClick={clearUserData}>
+            <button className="actions__btn refresh" onClick={clearUserData}>
               refresh <i className="fas fa-sync-alt icon-arrow"></i>
             </button>
           </div>
